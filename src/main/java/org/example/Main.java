@@ -115,6 +115,7 @@ public class Main {
                                 break;
                             }
                         }
+
                         if (reserveValidation) {
                             System.out.println();
                             System.out.println("예약이 완료되었습니다!");
@@ -123,6 +124,7 @@ public class Main {
                             for (int i = userStartTime - 10; i < userEndTime - 9; i++) {
                                 studyRoom[i][userRoom.charAt(0) - 'A'] = "O";
                             }
+
                         } else {
                             System.out.println();
                             System.out.println("스터디룸" + userRoom + "는 해당시간에 이미 예약되어 있습니다.");
